@@ -1,0 +1,12 @@
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\ICEBERG.Datos.dll.config
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\ICEBERG.Datos.dll
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\ICEBERG.Datos.pdb
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.CopyComplete
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.dll
+C:\Users\Usuario\Documents\Proyectos\ICEBERG\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.pdb
