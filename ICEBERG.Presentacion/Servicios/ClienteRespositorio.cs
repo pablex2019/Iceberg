@@ -13,9 +13,9 @@ namespace ICEBERG.Presentacion.Servicios
 
         public void AgregarCliente(Modelos.Cliente cliente)
         {
-            using (Iceberg iceberg = new Iceberg())
+            using (var iceberg = new Datos.Iceberg())
             {
-                Datos.Cliente clienteRespositorio = new Datos.Cliente
+                Dominio.Cliente clienteRespositorio = new Dominio.Cliente
                 {
                     Nombres = cliente.Nombres,
                     Apellidos = cliente.Apellidos,
@@ -26,7 +26,7 @@ namespace ICEBERG.Presentacion.Servicios
                     SaldoDeudor = cliente.SaldoDeudor,
                     Estado = cliente.Estado,
                 };
-                iceberg.Set<Datos.Cliente>().Add(clienteRespositorio);
+                iceberg.Set<Dominio.Cliente>().Add(clienteRespositorio);
                 iceberg.SaveChanges();
             }
         }

@@ -20,7 +20,7 @@ namespace ICEBERG.Presentacion.Presentadores
             clienteVista.AgregarClienteClicked += AgregarCliente;
             clienteRespositorio = new ClienteRespositorio();
         }
-        private void AgregarCliente(object sender, EventArgs e)
+        public void AgregarCliente(object sender, EventArgs e)
         {
             string nombres = clienteVista.Nombres;
             string apellidos = clienteVista.Apellidos;

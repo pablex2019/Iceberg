@@ -78,6 +78,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ICEBERG.Datos.Cliente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,6 +99,10 @@
     <ProjectReference Include="..\ICEBERG.Datos\ICEBERG.Datos.csproj">
       <Project>{427e8689-60cb-4fa8-bff9-df124ada9e02}</Project>
       <Name>ICEBERG.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iceberg.Dominio\Iceberg.Dominio.csproj">
+      <Project>{76d66ac6-aee6-4a45-876c-0a3c6bb0af13}</Project>
+      <Name>Iceberg.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

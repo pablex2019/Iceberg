@@ -22,6 +22,7 @@ namespace ICEBERG.Presentacion.Vistas
         {
             InitializeComponent();
             ClientePresentador = new ClientePresentador(this);
+            bindingSource1.DataSource = new Cliente() { Nombres = "Pepe" };
         }
 
         public event EventHandler AgregarClienteClicked;
@@ -34,11 +35,13 @@ namespace ICEBERG.Presentacion.Vistas
         public int Celular { get { return Convert.ToInt32(txtCelular.Text); } set { txtCelular.Text = txtCelular.Text; } }
         public string CorreoElectronico { get { return txtCorreoElectronico.Text; } set { txtCorreoElectronico.Text = value; } }
         public float SaldoDeudor { get { return float.Parse(txtSaldoDeudor.Text); } set { txtSaldoDeudor.Text = txtSaldoDeudor.Text; } }
+
         public void MostrarMensaje(string mensaje) { MessageBox.Show(mensaje);}
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             AgregarClienteClicked?.Invoke(this, EventArgs.Empty);
+            
         }
     }
 }

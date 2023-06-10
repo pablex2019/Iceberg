@@ -29,6 +29,7 @@ namespace ICEBERG.Presentacion.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +48,9 @@ namespace ICEBERG.Presentacion.Vistas
             this.txtSaldoDeudor = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,6 +81,7 @@ namespace ICEBERG.Presentacion.Vistas
             // 
             // txtNombre
             // 
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "Nombres", true));
             this.txtNombre.Location = new System.Drawing.Point(16, 274);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(254, 20);
@@ -198,6 +202,10 @@ namespace ICEBERG.Presentacion.Vistas
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ICEBERG.Datos.Cliente);
+            // 
             // ClienteFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +234,7 @@ namespace ICEBERG.Presentacion.Vistas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,6 +260,7 @@ namespace ICEBERG.Presentacion.Vistas
         private System.Windows.Forms.TextBox txtSaldoDeudor;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 

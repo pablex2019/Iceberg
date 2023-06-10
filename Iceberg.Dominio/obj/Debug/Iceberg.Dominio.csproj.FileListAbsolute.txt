@@ -1,0 +1,5 @@
+D:\Trabajos\Facultad\PAV\Finales\Roda\Iceberg\Iceberg.Dominio\bin\Debug\Iceberg.Dominio.dll
+D:\Trabajos\Facultad\PAV\Finales\Roda\Iceberg\Iceberg.Dominio\bin\Debug\Iceberg.Dominio.pdb
+D:\Trabajos\Facultad\PAV\Finales\Roda\Iceberg\Iceberg.Dominio\obj\Debug\Iceberg.Dominio.csproj.CoreCompileInputs.cache
+D:\Trabajos\Facultad\PAV\Finales\Roda\Iceberg\Iceberg.Dominio\obj\Debug\Iceberg.Dominio.dll
+D:\Trabajos\Facultad\PAV\Finales\Roda\Iceberg\Iceberg.Dominio\obj\Debug\Iceberg.Dominio.pdb
