@@ -5,44 +5,74 @@ using System.Text;
 using System.Threading.Tasks;
 using ICEBERG.Presentacion.Interfaces;
 using ICEBERG.Presentacion.Vistas;
-using ICEBERG.Presentacion.Modelos;
-using ICEBERG.Presentacion.Servicios;
+using ICEBERG.Objetos;
+using ICEBERG.Dominio.Servicios;
+using System.Windows.Forms;
+
 namespace ICEBERG.Presentacion.Presentadores
 {
     public class ClientePresentador
     {
         private readonly ICliente clienteVista;
-        private readonly ClienteRespositorio clienteRespositorio;
+        private readonly ClienteServicios clienteServicios;
 
         public ClientePresentador(ICliente vista)
         {
             clienteVista = vista;
-            clienteVista.AgregarClienteClicked += AgregarCliente;
-            clienteRespositorio = new ClienteRespositorio();
+            clienteServicios = new ClienteServicios();
         }
-        private void AgregarCliente(object sender, EventArgs e)
+        public List<Cliente> Listado()
         {
-            string nombres = clienteVista.Nombres;
-            string apellidos = clienteVista.Apellidos;
-            string domicilio = clienteVista.Domicilio;
-            int TelefonoFijo = clienteVista.TelefonoFijo;
-            int Celular = clienteVista.Celular;
-            string CorreoElectronico = clienteVista.CorreoElectronico;
-            float SaldoDeudor = clienteVista.SaldoDeudor;
-            bool Estado = true;
-
-            Modelos.Cliente cliente = new  Modelos.Cliente
+            return clienteServicios.ListadoClientes();
+        }
+        public Cliente ObtenerCliente(int id)
+        {
+            return clienteServicios.ObtenerCliente(id);
+        }
+        public void EditarCliente(Vistas.Cliente.Editar editar,int id)
+        {
+            Cliente cliente = new Cliente()
             {
-                Nombres = nombres,
-                Apellidos = apellidos,
-                Domicilio = domicilio,
-                TelefonoFijo = TelefonoFijo,
-                Celular = Celular,
-                CorreoElectronico = CorreoElectronico,
-                SaldoDeudor = SaldoDeudor,
-                Estado = Estado
+                Nombres = editar.txtNombres.Text,
+                Apellidos = editar.txtApellidos.Text,
+                Domicilio = editar.txtDomicilio.Text,
+                DNI = editar.txtDNI.Text == "" ? 0: Convert.ToInt32(editar.txtDNI.Text),
+                TelefonoFijo = Convert.ToInt32(editar.txtTelefonoFijo.Text),
+                Celular = Convert.ToInt32(editar.txtCelular.Text),
+                CorreoElectronico = editar.txtCorreoElectronico.Text,
+                SaldoDeudor = float.Parse(editar.txtSaldoDeudor.Text),
+                Estado = false
             };
-            clienteRespositorio.AgregarCliente(cliente);
+            clienteServicios.ABMCliente(cliente,2,id);
+            clienteVista.MostrarMensaje("Cliente editado");
+            editar.Close();
+        }
+        public void EliminarCliente(int id)
+        {
+            if (id != 0)
+            {
+                clienteServicios.ABMCliente(null,3,id);
+                clienteVista.MostrarMensaje("Cliente Eliminado");
+            }
+            else
+            {
+                clienteVista.MostrarMensaje("Debe seleccionar un registro");
+            }
+        }
+        public void AgregarCliente(Vistas.Cliente.Nuevo nuevo)
+        {
+            Cliente cliente = new Cliente()
+            {
+                Nombres = nuevo.txtNombres.Text,
+                Apellidos = nuevo.txtApellidos.Text,
+                Domicilio = nuevo.txtDomicilio.Text,
+                TelefonoFijo = Convert.ToInt32(nuevo.txtTelefonoFijo.Text),
+                Celular = Convert.ToInt32(nuevo.txtCelular.Text),
+                CorreoElectronico = nuevo.txtCorreoElectronico.Text,
+                SaldoDeudor = float.Parse(nuevo.txtSaldoDeudor.Text),
+                Estado = false
+            };
+            clienteServicios.ABMCliente(cliente,1,0);
             clienteVista.MostrarMensaje("Cliente agregado");
         }
     }
