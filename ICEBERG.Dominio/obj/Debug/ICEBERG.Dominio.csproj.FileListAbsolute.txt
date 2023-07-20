@@ -4,3 +4,20 @@ C:\Users\Usuario\Documents\Facultad\Programación de Aplicaciones Visuales\Icebe
 C:\Users\Usuario\Documents\Facultad\Programación de Aplicaciones Visuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\Facultad\Programación de Aplicaciones Visuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.dll
 C:\Users\Usuario\Documents\Facultad\Programación de Aplicaciones Visuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.pdb
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Dominio.dll.config
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Dominio.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Dominio.pdb
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Datos.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Objetos.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Datos.pdb
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Datos.dll.config
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\ICEBERG.Objetos.pdb
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.csproj.CopyComplete
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Dominio\obj\Debug\ICEBERG.Dominio.pdb

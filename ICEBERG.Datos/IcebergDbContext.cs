@@ -12,6 +12,7 @@ namespace ICEBERG.Datos
     public class IcebergDbContext: DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
 
         public IcebergDbContext() : base("name=IcebergDeveloper") { }
 

@@ -16,7 +16,7 @@ namespace ICEBERG.Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Presentacion.Vistas.Cliente.Index());
+            Application.Run(new Presentacion.Vistas.IniciarSesion());
         }
     }
 }
