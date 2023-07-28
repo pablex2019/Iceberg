@@ -39,9 +39,9 @@ namespace ICEBERG.Dominio
                         _proveedor.RazonSocial = _proveedor.RazonSocial;
                         _proveedor.Cuit = proveedor.Cuit;
                         _proveedor.Cuil = proveedor.Cuil;
-                        _proveedor.DNI = proveedor.DNI;
-                        _proveedor.Nombres = proveedor.Nombres;
-                        _proveedor.Apellidos = proveedor.Apellidos;
+                        _proveedor.Dni = proveedor.Dni;
+                        _proveedor.Nombre = proveedor.Nombre;
+                        _proveedor.Apellido = proveedor.Apellido;
                         _proveedor.Domicilio = proveedor.Domicilio;
                         _proveedor.CorreoElectronico = proveedor.CorreoElectronico;
                         _proveedor.TelefonoFijo = proveedor.TelefonoFijo;

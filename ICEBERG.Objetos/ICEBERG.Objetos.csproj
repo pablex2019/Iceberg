@@ -42,9 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulo.cs" />
+    <Compile Include="ArticuloPedido.cs" />
+    <Compile Include="ArticuloProveedor.cs" />
+    <Compile Include="Categoría.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="LineaPedido.cs" />
+    <Compile Include="Novedad.cs" />
+    <Compile Include="OpciónMenu.cs" />
+    <Compile Include="Pedido.cs" />
+    <Compile Include="Perfil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs" />
+    <Compile Include="Rubro.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="UsuarioNovedad.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

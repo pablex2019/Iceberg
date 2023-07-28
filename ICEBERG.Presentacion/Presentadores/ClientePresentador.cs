@@ -33,10 +33,10 @@ namespace ICEBERG.Presentacion.Presentadores
         {
             Cliente cliente = new Cliente()
             {
-                Nombres = editar.txtNombres.Text,
-                Apellidos = editar.txtApellidos.Text,
+                Nombre = editar.txtNombres.Text,
+                Apellido = editar.txtApellidos.Text,
                 Domicilio = editar.txtDomicilio.Text,
-                DNI = editar.txtDNI.Text == "" ? 0: Convert.ToInt32(editar.txtDNI.Text),
+                Dni = editar.txtDNI.Text == "" ? 0: Convert.ToInt32(editar.txtDNI.Text),
                 TelefonoFijo = Convert.ToInt32(editar.txtTelefonoFijo.Text),
                 Celular = Convert.ToInt32(editar.txtCelular.Text),
                 CorreoElectronico = editar.txtCorreoElectronico.Text,
@@ -63,8 +63,8 @@ namespace ICEBERG.Presentacion.Presentadores
         {
             Cliente cliente = new Cliente()
             {
-                Nombres = nuevo.txtNombres.Text,
-                Apellidos = nuevo.txtApellidos.Text,
+                Nombre = nuevo.txtNombres.Text,
+                Apellido = nuevo.txtApellidos.Text,
                 Domicilio = nuevo.txtDomicilio.Text,
                 TelefonoFijo = Convert.ToInt32(nuevo.txtTelefonoFijo.Text),
                 Celular = Convert.ToInt32(nuevo.txtCelular.Text),

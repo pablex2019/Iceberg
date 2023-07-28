@@ -36,10 +36,10 @@ namespace ICEBERG.Presentacion.Vistas.Cliente
         private void Editar_Load(object sender, EventArgs e)
         {
             var cliente = clientePresentador.ObtenerCliente(id);
-            txtNombres.Text = cliente.Nombres;
-            txtApellidos.Text = cliente.Apellidos;
+            txtNombres.Text = cliente.Nombre;
+            txtApellidos.Text = cliente.Apellido;
             txtDomicilio.Text = cliente.Domicilio;
-            txtDNI.Text = cliente.DNI.ToString();
+            txtDNI.Text = cliente.Dni.ToString();
             txtTelefonoFijo.Text = cliente.TelefonoFijo.ToString();
             txtCelular.Text = cliente.Celular.ToString();
             txtCorreoElectronico.Text = cliente.CorreoElectronico;

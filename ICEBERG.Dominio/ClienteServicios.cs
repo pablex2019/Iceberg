@@ -36,10 +36,9 @@ namespace ICEBERG.Dominio.Servicios
                 case 2:
                     try
                     {
-                        _cliente.Nombres = cliente.Nombres;
-                        _cliente.Apellidos = cliente.Apellidos;
-                        _cliente.Nombres = cliente.Nombres;
-                        _cliente.DNI = cliente.DNI;
+                        _cliente.Nombre = cliente.Nombre;
+                        _cliente.Apellido = cliente.Apellido;
+                        _cliente.Dni = cliente.Dni;
                         _cliente.TelefonoFijo = cliente.TelefonoFijo;
                         _cliente.Celular = cliente.Celular;
                         _cliente.CorreoElectronico = cliente.CorreoElectronico;

@@ -15,12 +15,11 @@ namespace ICEBERG.Objetos
         [Required]
         public string Cuit { get; set; }
         public string Cuil { get; set; }
-        public string DNI { get; set; } 
-        public string Nombres { get; set; }
-        public string Apellidos { get; set; }
+        public int? Dni { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
         [Required]
         public string Domicilio { get; set; }
-        [Required]
         public string CorreoElectronico { get; set; }
         public int? TelefonoFijo { get; set; }
         [Required]
