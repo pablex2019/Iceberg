@@ -34,9 +34,9 @@ C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\I
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\bin\Debug\EntityFramework.xml
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.Migrations.icerbergMigraciones.resources
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.CopyComplete
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.dll
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.pdb
-C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.Migrations.icebergMigraciones.resources
-C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Datos\obj\Debug\ICEBERG.Datos.csproj.GenerateResource.cache

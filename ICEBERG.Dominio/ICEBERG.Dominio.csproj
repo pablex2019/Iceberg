@@ -48,9 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoríaServicios.cs" />
+    <Compile Include="EmpleadoServicios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClienteServicios.cs" />
     <Compile Include="ProveedorServicios.cs" />
+    <Compile Include="RubroServicios.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

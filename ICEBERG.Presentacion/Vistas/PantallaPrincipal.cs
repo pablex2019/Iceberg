@@ -19,14 +19,52 @@ namespace ICEBERG.Presentacion.Vistas
 
         private void mnuClientes_Click(object sender, EventArgs e)
         {
-            Vistas.Cliente.Index index = new Cliente.Index();
+            Vistas.Cliente.Inicio index = new Cliente.Inicio();
             index.MdiParent = this;
             index.Show();
         }
 
         private void mnuProveedores_Click(object sender, EventArgs e)
         {
-            Vistas.Proveedor.Index index = new Proveedor.Index();
+            Vistas.Proveedor.Inicio index = new Proveedor.Inicio();
+            index.MdiParent = this;
+            index.Show();
+        }
+
+        private void mnuSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Esta seguro/a de salir?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            switch(result)
+            {
+                case DialogResult.Yes:
+                    this.Close();
+                    new IniciarSesion().Show();
+                    break;
+            }
+        }
+
+        private void mnuArticulos_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void mnuRubros_Click(object sender, EventArgs e)
+        {
+            Vistas.Rubro.Inicio index = new Rubro.Inicio();
+            index.MdiParent = this;
+            index.Show();
+        }
+
+        private void mnuCategorías_Click(object sender, EventArgs e)
+        {
+            Vistas.Categoría.Inicio index = new Categoría.Inicio();
+            index.MdiParent = this;
+            index.Show();
+        }
+
+        private void mnuEmpleados_Click(object sender, EventArgs e)
+        {
+            Vistas.Empleado.Inicio index = new Empleado.Inicio();
             index.MdiParent = this;
             index.Show();
         }

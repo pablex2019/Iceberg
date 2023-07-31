@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ICEBERG.Presentacion.Vistas.Proveedor
+namespace ICEBERG.Presentacion.Vistas.Novedad
 {
-    public partial class Index : Form
+    public partial class Inicio : Form
     {
-        public Index()
+        public Inicio()
         {
             InitializeComponent();
         }

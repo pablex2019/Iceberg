@@ -1,7 +1,7 @@
 ﻿
-namespace ICEBERG.Presentacion.Vistas.Proveedor
+namespace ICEBERG.Presentacion.Vistas.Pedido
 {
-    partial class Index
+    partial class Nuevo
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace ICEBERG.Presentacion.Vistas.Proveedor
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Index";
+            this.Text = "Nuevo";
         }
 
         #endregion

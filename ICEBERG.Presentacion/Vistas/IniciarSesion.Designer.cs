@@ -82,6 +82,7 @@ namespace ICEBERG.Presentacion.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(134, 143);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.textBox2);
@@ -89,6 +90,7 @@ namespace ICEBERG.Presentacion.Vistas
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "IniciarSesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IniciarSesion";
             this.ResumeLayout(false);
             this.PerformLayout();
