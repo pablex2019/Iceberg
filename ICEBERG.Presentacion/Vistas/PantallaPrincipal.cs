@@ -68,5 +68,12 @@ namespace ICEBERG.Presentacion.Vistas
             index.MdiParent = this;
             index.Show();
         }
+
+        private void mnuUsuarios_Click(object sender, EventArgs e)
+        {
+            Vistas.Usuario.Inicio index = new Usuario.Inicio();
+            index.MdiParent = this;
+            index.Show();
+        }
     }
 }

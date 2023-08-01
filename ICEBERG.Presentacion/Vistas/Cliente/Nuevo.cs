@@ -31,5 +31,10 @@ namespace ICEBERG.Presentacion.Vistas.Cliente
         {
             clientePresentador.AgregarCliente(this);
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

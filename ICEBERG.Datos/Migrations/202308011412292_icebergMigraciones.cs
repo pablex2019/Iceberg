@@ -3,7 +3,7 @@ namespace ICEBERG.Datos.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class icerbergMigraciones : DbMigration
+    public partial class icebergMigraciones : DbMigration
     {
         public override void Up()
         {
@@ -197,8 +197,11 @@ namespace ICEBERG.Datos.Migrations
                         FechaHora = c.DateTime(nullable: false),
                         Descripción = c.String(nullable: false),
                         Estado = c.Boolean(nullable: false),
+                        Usuario_UsuarioId = c.Int(),
                     })
-                .PrimaryKey(t => t.NovedadId);
+                .PrimaryKey(t => t.NovedadId)
+                .ForeignKey("dbo.Usuarios", t => t.Usuario_UsuarioId)
+                .Index(t => t.Usuario_UsuarioId);
             
             CreateTable(
                 "dbo.OpciónMenu",
@@ -210,26 +213,11 @@ namespace ICEBERG.Datos.Migrations
                     })
                 .PrimaryKey(t => t.OpciónMenuId);
             
-            CreateTable(
-                "dbo.UsuarioNovedads",
-                c => new
-                    {
-                        UsuarioNovedadId = c.Int(nullable: false, identity: true),
-                        Novedad_NovedadId = c.Int(),
-                        Usuario_UsuarioId = c.Int(),
-                    })
-                .PrimaryKey(t => t.UsuarioNovedadId)
-                .ForeignKey("dbo.Novedads", t => t.Novedad_NovedadId)
-                .ForeignKey("dbo.Usuarios", t => t.Usuario_UsuarioId)
-                .Index(t => t.Novedad_NovedadId)
-                .Index(t => t.Usuario_UsuarioId);
-            
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.UsuarioNovedads", "Usuario_UsuarioId", "dbo.Usuarios");
-            DropForeignKey("dbo.UsuarioNovedads", "Novedad_NovedadId", "dbo.Novedads");
+            DropForeignKey("dbo.Novedads", "Usuario_UsuarioId", "dbo.Usuarios");
             DropForeignKey("dbo.ArticuloProveedors", "Proveedor_ProveedorId", "dbo.Proveedors");
             DropForeignKey("dbo.ArticuloProveedors", "Articulo_ArticuloId", "dbo.Articuloes");
             DropForeignKey("dbo.ArticuloPedidoes", "Pedido_PedidoId", "dbo.Pedidoes");
@@ -240,8 +228,7 @@ namespace ICEBERG.Datos.Migrations
             DropForeignKey("dbo.ArticuloPedidoes", "Articulo_ArticuloId", "dbo.Articuloes");
             DropForeignKey("dbo.Articuloes", "Categoría_CategoríaId", "dbo.Categoría");
             DropForeignKey("dbo.Categoría", "Rubro_RubroId", "dbo.Rubroes");
-            DropIndex("dbo.UsuarioNovedads", new[] { "Usuario_UsuarioId" });
-            DropIndex("dbo.UsuarioNovedads", new[] { "Novedad_NovedadId" });
+            DropIndex("dbo.Novedads", new[] { "Usuario_UsuarioId" });
             DropIndex("dbo.ArticuloProveedors", new[] { "Proveedor_ProveedorId" });
             DropIndex("dbo.ArticuloProveedors", new[] { "Articulo_ArticuloId" });
             DropIndex("dbo.Usuarios", new[] { "Perfil_PerfilId" });
@@ -252,7 +239,6 @@ namespace ICEBERG.Datos.Migrations
             DropIndex("dbo.ArticuloPedidoes", new[] { "Articulo_ArticuloId" });
             DropIndex("dbo.Categoría", new[] { "Rubro_RubroId" });
             DropIndex("dbo.Articuloes", new[] { "Categoría_CategoríaId" });
-            DropTable("dbo.UsuarioNovedads");
             DropTable("dbo.OpciónMenu");
             DropTable("dbo.Novedads");
             DropTable("dbo.LineaPedidoes");

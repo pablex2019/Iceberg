@@ -15,12 +15,14 @@ namespace ICEBERG.Presentacion.Vistas.Cliente
     public partial class Editar : Form, ICliente
     {
         public int id;
-        private ClientePresentador clientePresentador;
+        public BindingSource BindingSource;
+
+        private readonly ClientePresentador clientePresentador;
 
         public Editar()
         {
             InitializeComponent();
-            clientePresentador = new ClientePresentador(null);
+            clientePresentador = new ClientePresentador(this);
         }
 
         public void MostrarMensaje(string mensaje)
@@ -31,19 +33,25 @@ namespace ICEBERG.Presentacion.Vistas.Cliente
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             clientePresentador.EditarCliente(this,id);
+            BindingSource.DataSource = clientePresentador.Listado();
         }
 
         private void Editar_Load(object sender, EventArgs e)
         {
             var cliente = clientePresentador.ObtenerCliente(id);
+            txtDni.Text = cliente.Dni.ToString();
             txtNombres.Text = cliente.Nombre;
             txtApellidos.Text = cliente.Apellido;
             txtDomicilio.Text = cliente.Domicilio;
-            txtDNI.Text = cliente.Dni.ToString();
             txtTelefonoFijo.Text = cliente.TelefonoFijo.ToString();
             txtCelular.Text = cliente.Celular.ToString();
             txtCorreoElectronico.Text = cliente.CorreoElectronico;
             txtSaldoDeudor.Text = cliente.SaldoDeudor.ToString();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

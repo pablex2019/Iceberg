@@ -36,9 +36,10 @@ namespace ICEBERG.Dominio.Servicios
                 case 2:
                     try
                     {
+                        _cliente.Dni = cliente.Dni;
                         _cliente.Nombre = cliente.Nombre;
                         _cliente.Apellido = cliente.Apellido;
-                        _cliente.Dni = cliente.Dni;
+                        _cliente.Domicilio = cliente.Domicilio;
                         _cliente.TelefonoFijo = cliente.TelefonoFijo;
                         _cliente.Celular = cliente.Celular;
                         _cliente.CorreoElectronico = cliente.CorreoElectronico;
@@ -54,7 +55,7 @@ namespace ICEBERG.Dominio.Servicios
                 case 3:
                     try
                     {
-                        IcebergDbContext.Clientes.Remove(cliente);
+                        _cliente.Estado = true;
                         IcebergDbContext.SaveChanges();
                     }
                     catch (Exception ex)
@@ -67,7 +68,7 @@ namespace ICEBERG.Dominio.Servicios
 
         public List<Cliente> ListadoClientes()
         {
-            return IcebergDbContext.Clientes.ToList();
+            return IcebergDbContext.Clientes.Where(x=>x.Estado == false).ToList();
         }
 
         public Cliente ObtenerCliente(int Id)

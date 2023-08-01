@@ -53,3 +53,9 @@ C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\I
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.csproj.CopyComplete
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.exe
 C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.pdb
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.Vistas.Novedad.Inicio.resources
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.Vistas.Usuario.Editar.resources
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.Vistas.Usuario.Nuevo.resources
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.Vistas.Articulo.Inicio.resources
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.Vistas.Proveedor.Editar.resources
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Presentacion\obj\Debug\ICEBERG.Presentacion.Vistas.Proveedor.Nuevo.resources

@@ -13,7 +13,7 @@ namespace ICEBERG.Objetos
         public DateTime FechaHora { get; set; }
         [Required]
         public string Descripción { get; set; }
-        [Required]
+        public Usuario Usuario { get; set; }
         public bool Estado { get; set; }
     }
 }

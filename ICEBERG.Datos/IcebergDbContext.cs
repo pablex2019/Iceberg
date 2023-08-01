@@ -25,7 +25,6 @@ namespace ICEBERG.Datos
         public DbSet<Proveedor> Proveedores { get; set; }
         public DbSet<Rubro> Rubros { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<UsuarioNovedad> UsuariosNovedades { get; set; }
 
 
         public IcebergDbContext() : base("name=IcebergDeveloper") { }

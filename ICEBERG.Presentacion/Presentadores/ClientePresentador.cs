@@ -33,10 +33,10 @@ namespace ICEBERG.Presentacion.Presentadores
         {
             Cliente cliente = new Cliente()
             {
+                Dni = editar.txtDni.Text == "" ? 0 : Convert.ToInt32(editar.txtDni.Text),
                 Nombre = editar.txtNombres.Text,
                 Apellido = editar.txtApellidos.Text,
                 Domicilio = editar.txtDomicilio.Text,
-                Dni = editar.txtDNI.Text == "" ? 0: Convert.ToInt32(editar.txtDNI.Text),
                 TelefonoFijo = Convert.ToInt32(editar.txtTelefonoFijo.Text),
                 Celular = Convert.ToInt32(editar.txtCelular.Text),
                 CorreoElectronico = editar.txtCorreoElectronico.Text,
@@ -52,7 +52,7 @@ namespace ICEBERG.Presentacion.Presentadores
             if (id != 0)
             {
                 clienteServicios.ABMCliente(null,3,id);
-                clienteVista.MostrarMensaje("Cliente Eliminado");
+                clienteVista.MostrarMensaje("Cliente eliminado");
             }
             else
             {
@@ -63,6 +63,7 @@ namespace ICEBERG.Presentacion.Presentadores
         {
             Cliente cliente = new Cliente()
             {
+                Dni = nuevo.txtDni.Text == "" ? 0 : Convert.ToInt32(nuevo.txtDni.Text),
                 Nombre = nuevo.txtNombres.Text,
                 Apellido = nuevo.txtApellidos.Text,
                 Domicilio = nuevo.txtDomicilio.Text,

@@ -39,7 +39,7 @@ namespace ICEBERG.Presentacion.Vistas.Rubro
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void Editar_Load(object sender, EventArgs e)

@@ -7,13 +7,13 @@ namespace ICEBERG.Datos.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class icerbergMigraciones : IMigrationMetadata
+    public sealed partial class icebergMigraciones : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(icerbergMigraciones));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(icebergMigraciones));
         
         string IMigrationMetadata.Id
         {
-            get { return "202307310425456_icerbergMigraciones"; }
+            get { return "202308011412292_icebergMigraciones"; }
         }
         
         string IMigrationMetadata.Source

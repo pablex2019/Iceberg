@@ -25,7 +25,7 @@ namespace ICEBERG.Presentacion.Vistas.Cliente
 
         public void MostrarMensaje(string mensaje)
         {
-            if(!string.IsNullOrEmpty(mensaje)){ MessageBox.Show(mensaje); }
+            if(!string.IsNullOrEmpty(mensaje)){ MessageBox.Show(mensaje,"", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -46,18 +46,19 @@ namespace ICEBERG.Presentacion.Vistas.Cliente
             {
                 Vistas.Cliente.Editar Editar = new Vistas.Cliente.Editar();
                 Editar.id = id;
+                Editar.BindingSource = bindingSource1;
                 Editar.ShowDialog();
             }
             else
             {
                 MostrarMensaje("Debe seleccionar un registro");
             }
-            bindingSource1.DataSource = clientePresentador.Listado();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             clientePresentador.EliminarCliente(id);
+            bindingSource1.DataSource = clientePresentador.Listado();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -53,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IcebergDbContext.cs" />
-    <Compile Include="Migrations\202307310425456_icerbergMigraciones.cs" />
-    <Compile Include="Migrations\202307310425456_icerbergMigraciones.Designer.cs">
-      <DependentUpon>202307310425456_icerbergMigraciones.cs</DependentUpon>
+    <Compile Include="Migrations\202308011412292_icebergMigraciones.cs" />
+    <Compile Include="Migrations\202308011412292_icebergMigraciones.Designer.cs">
+      <DependentUpon>202308011412292_icebergMigraciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,8 +74,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202307310425456_icerbergMigraciones.resx">
-      <DependentUpon>202307310425456_icerbergMigraciones.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308011412292_icebergMigraciones.resx">
+      <DependentUpon>202308011412292_icebergMigraciones.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
