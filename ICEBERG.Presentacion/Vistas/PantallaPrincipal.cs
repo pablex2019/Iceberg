@@ -12,6 +12,8 @@ namespace ICEBERG.Presentacion.Vistas
 {
     public partial class PantallaPrincipal : Form
     {
+        public string usuario;
+
         public PantallaPrincipal()
         {
             InitializeComponent();
@@ -45,7 +47,9 @@ namespace ICEBERG.Presentacion.Vistas
 
         private void mnuArticulos_Click(object sender, EventArgs e)
         {
-           
+            Vistas.Articulo.Inicio index = new Articulo.Inicio();
+            index.MdiParent = this;
+            index.Show();
         }
 
         private void mnuRubros_Click(object sender, EventArgs e)
@@ -74,6 +78,22 @@ namespace ICEBERG.Presentacion.Vistas
             Vistas.Usuario.Inicio index = new Usuario.Inicio();
             index.MdiParent = this;
             index.Show();
+        }
+
+        private void mnuNovedades_Click(object sender, EventArgs e)
+        {
+            Vistas.Novedad.Inicio index = new Novedad.Inicio();
+            index.MdiParent = this;
+            index._usuario = usuario;
+            index.Show();
+        }
+
+        private void mnuPedidos_Click(object sender, EventArgs e)
+        {
+            Vistas.Pedido.Nuevo nuevo = new Pedido.Nuevo();
+            nuevo.MdiParent = this;
+            nuevo._usuario = usuario;
+            nuevo.Show();
         }
     }
 }

@@ -87,5 +87,26 @@ namespace ICEBERG.Presentacion.Presentadores
         {
             return usuariosServicios.ObtenerEmpleadoPorDni(Convert.ToInt32(dni));
         }
+        public void VerificarExistenciaUsuario(Vistas.IniciarSesion iniciarSesion)
+        {
+            if (!string.IsNullOrEmpty(iniciarSesion.txtUsuario.Text) && !string.IsNullOrEmpty(iniciarSesion.txtClave.Text)){
+                if (usuariosServicios.VerificarExitencia(iniciarSesion.txtUsuario.Text,iniciarSesion.txtClave.Text) == true)
+                {
+                    PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                    pantallaPrincipal.usuario = iniciarSesion.txtUsuario.Text;
+                    pantallaPrincipal.Show();
+                    iniciarSesion.Hide();
+                }
+                else
+                {
+                    usuarioVista.MostrarMensaje("El usuario y/o contraseña incorrectos");
+                }
+            }
+            else
+            {
+                usuarioVista.MostrarMensaje("Completar campo usuario y/o contraseña");
+            }
+            
+        }
     }
 }

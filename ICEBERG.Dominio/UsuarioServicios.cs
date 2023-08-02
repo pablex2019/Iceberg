@@ -73,6 +73,7 @@ namespace ICEBERG.Dominio
                            where usuario.Estado == false
                            select new
                            {
+                               UsuarioId = usuario.UsuarioId,
                                ApellidoyNombre = empleado.Apellido + ", " + empleado.Nombre,
                                Legajo = empleado.Legajo,
                                Usuario = usuario.Nombre,
@@ -95,12 +96,14 @@ namespace ICEBERG.Dominio
                                Nombre = empleado.Nombre,
                                Legajo = empleado.Legajo,
                                Usuario = usuario.Nombre,
+                               Clave = usuario.Clave,
                                Perfil = perfil.Descripción
                            });
 
             _user.Nombre = listado.ToList().First().Usuario;
             _user.Empleado = ObtenerEmpleadoPorLegajo(listado.ToList().First().Legajo);
             _user.Perfil = ObtenerPerfil(listado.ToList().First().Perfil);
+            _user.Clave = listado.ToList().First().Clave;
 
             return _user;
         }
@@ -115,6 +118,10 @@ namespace ICEBERG.Dominio
         public Empleado ObtenerEmpleadoPorDni(int dni)
         {
             return IcebergDbContext.Empleados.Where(x => x.Dni == dni).First();
+        }
+        public bool VerificarExitencia(string nombre,string clave)
+        {
+            return IcebergDbContext.Usuarios.Any(x => x.Nombre == nombre && x.Clave == clave);
         }
     }
 }

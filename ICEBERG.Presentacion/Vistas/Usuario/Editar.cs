@@ -48,7 +48,7 @@ namespace ICEBERG.Presentacion.Vistas.Usuario
             var usuario = usuarioPresentador.ObtenerUsuario(id);
             cboDnis.DataSource = _dnis;
             cboPerfiles.DataSource = _perfiles;
-            cboDnis.SelectedItem = usuario.Empleado.Dni;
+            cboDnis.SelectedItem = usuario.Empleado.Dni.ToString();
             cboPerfiles.SelectedItem = usuario.Perfil.Descripción;
             txtApellidoyNombre.Text = usuario.Empleado.Apellido+", "+usuario.Empleado.Nombre;
             txtLegajo.Text = usuario.Empleado.Legajo.ToString();

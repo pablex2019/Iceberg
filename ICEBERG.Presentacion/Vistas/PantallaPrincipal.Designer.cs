@@ -116,12 +116,14 @@ namespace ICEBERG.Presentacion.Vistas
             this.mnuNovedades.Name = "mnuNovedades";
             this.mnuNovedades.Size = new System.Drawing.Size(78, 20);
             this.mnuNovedades.Text = "Novedades";
+            this.mnuNovedades.Click += new System.EventHandler(this.mnuNovedades_Click);
             // 
             // mnuPedidos
             // 
             this.mnuPedidos.Name = "mnuPedidos";
             this.mnuPedidos.Size = new System.Drawing.Size(61, 20);
             this.mnuPedidos.Text = "Pedidos";
+            this.mnuPedidos.Click += new System.EventHandler(this.mnuPedidos_Click);
             // 
             // mnuSalir
             // 

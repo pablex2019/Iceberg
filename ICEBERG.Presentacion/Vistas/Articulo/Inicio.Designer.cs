@@ -29,19 +29,22 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ClienteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ArticuloId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preciocosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preciopedidopormenor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preciopedidopormayor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEliminar
@@ -87,28 +90,31 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ClienteId,
+            this.ArticuloId,
             this.Codigo,
             this.descripción,
             this.preciocosto,
             this.preciopedidopormenor,
             this.preciopedidopormayor,
             this.categoria});
+            this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(15, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(726, 150);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // ClienteId
+            // ArticuloId
             // 
-            this.ClienteId.DataPropertyName = "EmpleadoId";
-            this.ClienteId.HeaderText = "Identifacador";
-            this.ClienteId.Name = "ClienteId";
-            this.ClienteId.ReadOnly = true;
-            this.ClienteId.Visible = false;
+            this.ArticuloId.DataPropertyName = "ArticuloId";
+            this.ArticuloId.HeaderText = "Identifacador";
+            this.ArticuloId.Name = "ArticuloId";
+            this.ArticuloId.ReadOnly = true;
+            this.ArticuloId.Visible = false;
             // 
             // Codigo
             // 
@@ -165,7 +171,9 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.Controls.Add(this.dataGridView1);
             this.Name = "Inicio";
             this.Text = "Articulos - Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,12 +186,13 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArticuloId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripción;
         private System.Windows.Forms.DataGridViewTextBoxColumn preciocosto;
         private System.Windows.Forms.DataGridViewTextBoxColumn preciopedidopormenor;
         private System.Windows.Forms.DataGridViewTextBoxColumn preciopedidopormayor;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

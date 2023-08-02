@@ -10,21 +10,17 @@ using System.Windows.Forms;
 using ICEBERG.Presentacion.Presentadores;
 using ICEBERG.Presentacion.Interfaces;
 
-namespace ICEBERG.Presentacion.Vistas.Proveedor
+namespace ICEBERG.Presentacion.Vistas.Novedad
 {
-    public partial class Nuevo : Form, IProveedor
+    public partial class Nuevo : Form,INovedad
     {
-        private readonly ProveedorPresentador proveedorPresentador;
+        public string usuario;
+        private readonly NovedadPresentador novedadPresentador;
 
         public Nuevo()
         {
             InitializeComponent();
-            proveedorPresentador = new ProveedorPresentador(this);
-        }
-
-        public void MostrarMensaje(string mensaje)
-        {
-            MessageBox.Show(mensaje, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            novedadPresentador = new NovedadPresentador(this);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -34,7 +30,12 @@ namespace ICEBERG.Presentacion.Vistas.Proveedor
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            proveedorPresentador.AgregarProveedor(this);
+            novedadPresentador.AgregarNovedad(this);
+        }
+
+        public void MostrarMensaje(string mensaje)
+        {
+            MessageBox.Show(mensaje, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ICEBERG.Presentacion.Vistas.Pedido
+namespace ICEBERG.Presentacion.Vistas.Articulo
 {
-    public partial class LineaDePedido : Form
+    public partial class Nuevo : Form
     {
-        public LineaDePedido()
+        public Nuevo()
         {
             InitializeComponent();
-        }
-
-        private void LineaDePedido_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

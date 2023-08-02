@@ -125,6 +125,7 @@ namespace ICEBERG.Presentacion.Vistas.Proveedor
             this.btnCancelar.TabIndex = 55;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label6
             // 
@@ -223,6 +224,7 @@ namespace ICEBERG.Presentacion.Vistas.Proveedor
             this.btnGuardar.TabIndex = 43;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtNombres
             // 
@@ -260,6 +262,7 @@ namespace ICEBERG.Presentacion.Vistas.Proveedor
             this.Controls.Add(this.txtNombres);
             this.Name = "Editar";
             this.Text = "Proveedor - Editar";
+            this.Load += new System.EventHandler(this.Editar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

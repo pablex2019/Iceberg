@@ -57,7 +57,7 @@ namespace ICEBERG.Dominio
                 case 3:
                     try
                     {
-                        IcebergDbContext.Proveedores.Remove(proveedor);
+                        _proveedor.Estado = true;
                         IcebergDbContext.SaveChanges();
                     }
                     catch (Exception ex)

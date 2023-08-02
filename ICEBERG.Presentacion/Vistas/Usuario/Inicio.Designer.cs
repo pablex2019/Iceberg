@@ -40,6 +40,7 @@ namespace ICEBERG.Presentacion.Vistas.Usuario
             this.apellidoynombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perfil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -95,6 +96,7 @@ namespace ICEBERG.Presentacion.Vistas.Usuario
             this.apellidoynombre,
             this.Legajo,
             this.Usuario,
+            this.Clave,
             this.perfil});
             this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(15, 41);
@@ -132,6 +134,14 @@ namespace ICEBERG.Presentacion.Vistas.Usuario
             this.Usuario.HeaderText = "Usuario";
             this.Usuario.Name = "Usuario";
             this.Usuario.ReadOnly = true;
+            // 
+            // Clave
+            // 
+            this.Clave.DataPropertyName = "Clave";
+            this.Clave.HeaderText = "Clave";
+            this.Clave.Name = "Clave";
+            this.Clave.ReadOnly = true;
+            this.Clave.Visible = false;
             // 
             // perfil
             // 
@@ -172,6 +182,7 @@ namespace ICEBERG.Presentacion.Vistas.Usuario
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoynombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Legajo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
         private System.Windows.Forms.DataGridViewTextBoxColumn perfil;
     }
 }
