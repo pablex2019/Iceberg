@@ -56,7 +56,9 @@
     <Compile Include="Interfaces\IArticulo.cs" />
     <Compile Include="Interfaces\ICategoría.cs" />
     <Compile Include="Interfaces\IEmpleado.cs" />
+    <Compile Include="Interfaces\ILineaDePedido.cs" />
     <Compile Include="Interfaces\INovedad.cs" />
+    <Compile Include="Interfaces\IPedido.cs" />
     <Compile Include="Interfaces\IProveedor.cs" />
     <Compile Include="Interfaces\IRubro.cs" />
     <Compile Include="Interfaces\IUsuario.cs" />
@@ -65,7 +67,9 @@
     <Compile Include="Presentadores\ClientePresentador.cs" />
     <Compile Include="Interfaces\ICliente.cs" />
     <Compile Include="Presentadores\EmpleadoPresentador.cs" />
+    <Compile Include="Presentadores\LineaDePedidoPresentador.cs" />
     <Compile Include="Presentadores\NovedadPresentador.cs" />
+    <Compile Include="Presentadores\PedidoPresentador.cs" />
     <Compile Include="Presentadores\ProveedorPresentador.cs" />
     <Compile Include="Presentadores\RubroPresentador.cs" />
     <Compile Include="Presentadores\UsuarioPresentador.cs" />

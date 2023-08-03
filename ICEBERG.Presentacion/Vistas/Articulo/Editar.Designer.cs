@@ -183,6 +183,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.Controls.Add(this.txtDescripción);
             this.Name = "Editar";
             this.Text = "Articulo - Editar";
+            this.Load += new System.EventHandler(this.Editar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

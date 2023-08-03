@@ -13,61 +13,69 @@ namespace ICEBERG.Presentacion.Presentadores
     public class ArticuloPresentador
     {
         private readonly IArticulo articuloVista;
-        //private readonly ArticuloServicios categoríaServicios;
+        private readonly ArticuloServicios articuloServicios;
         private readonly CategoríaServicios categoríaServicios;
 
         public ArticuloPresentador(IArticulo vista)
         {
             articuloVista = vista;
+            articuloServicios = new ArticuloServicios();
             categoríaServicios = new CategoríaServicios();
         }
         public List<Object> Listado()
         {
-            return categoríaServicios.ListadoCategorías();
+            return articuloServicios.ListadoArticulos();
         }
-        public Categoría ObtenerCategoría(int id)
+        public Articulo ObtenerArticulo(int id)
         {
-            return categoríaServicios.ObtenerCategoría(id);
+            return articuloServicios.ObtenerArticulo(id);
         }
-        public void EditarCategoría(Vistas.Categoría.Editar editar, int id)
+        public void EditarArticulo(Vistas.Articulo.Editar editar, int id)
         {
-            Categoría categoría = new Categoría()
+            Articulo articulo = new Articulo()
             {
-                Rubro = categoríaServicios.ObtenerRubroDeLaCategoría(editar.cboRubros.Text),
+                Codigo = Convert.ToInt32(editar.txtCodigo.Text),
                 Descripción = editar.txtDescripción.Text,
-                Estado = false
+                PrecioCosto = float.Parse(editar.txtPrecioCosto.Text),
+                PrecioPedidoPorMenor = float.Parse(editar.txtPrecioPedidoPorMenor.Text),
+                PrecioPedidoPorMayor = float.Parse(editar.txtPrecioPedidoPorMayor.Text),
+                Categoría = articuloServicios.ObtenerCategoríaDelArticulo(editar.cboCategorías.Text),
             };
-            categoríaServicios.ABMCategoría(categoría, 2, id);
-            //categoríaVista.MostrarMensaje("Categoría editada");
+            articuloServicios.ABMArticulo(articulo, 2, id);
+            articuloVista.MostrarMensaje("Articulo editada");
             editar.Close();
         }
-        public void EliminarCategoría(int id)
+        public void EliminarArticulo(int id)
         {
             if (id != 0)
             {
-                categoríaServicios.ABMCategoría(null, 3, id);
-                //categoríaVista.MostrarMensaje("Categoría eliminada");
+                articuloServicios.ABMArticulo(null, 3, id);
+                articuloVista.MostrarMensaje("Articulo eliminada");
             }
             else
             {
-                //categoríaVista.MostrarMensaje("Debe seleccionar un registro");
+                articuloVista.MostrarMensaje("Debe seleccionar un registro");
             }
         }
-        public void AgregarCategoría(Vistas.Categoría.Nuevo nuevo)
+        public void AgregarArticulo(Vistas.Articulo.Nuevo nuevo)
         {
-            Categoría categoría = new Categoría()
+            Articulo articulo = new Articulo()
             {
-                Rubro = categoríaServicios.ObtenerRubroDeLaCategoría(nuevo.cboRubros.Text),
+                Codigo = Convert.ToInt32(nuevo.txtCodigo.Text),
                 Descripción = nuevo.txtDescripción.Text,
-                Estado = false
+                PrecioCosto = float.Parse(nuevo.txtPrecioCosto.Text),
+                PrecioPedidoPorMenor = float.Parse(nuevo.txtPrecioPedidoPorMenor.Text),
+                PrecioPedidoPorMayor = float.Parse(nuevo.txtPrecioPedidoPorMayor.Text),
+                FechaHora = DateTime.Now,
+                Categoría = articuloServicios.ObtenerCategoríaDelArticulo(nuevo.cboCategorías.Text),
+                Estado = false,
             };
-            categoríaServicios.ABMCategoría(categoría, 1, 0);
-            //categoríaVista.MostrarMensaje("Categoría agregada");
+            articuloServicios.ABMArticulo(articulo, 1, 0);
+            articuloVista.MostrarMensaje("Articulo agregada");
         }
         public List<string> ObtenerCategorias()
         {
-            List<string> lista = new List<string>();
-            return lista;
+            return articuloServicios.ObtenerCategorias();
         }
     }
 }

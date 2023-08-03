@@ -89,8 +89,8 @@ namespace ICEBERG.Datos.Migrations
                         Nombre = c.String(nullable: false),
                         Apellido = c.String(nullable: false),
                         Domicilio = c.String(nullable: false),
-                        TelefonoFijo = c.Int(),
-                        Celular = c.Int(nullable: false),
+                        TelefonoFijo = c.String(),
+                        Celular = c.String(nullable: false),
                         CorreoElectronico = c.String(),
                         SaldoDeudor = c.Single(),
                         Estado = c.Boolean(nullable: false),
@@ -127,8 +127,8 @@ namespace ICEBERG.Datos.Migrations
                         Apellido = c.String(),
                         Domicilio = c.String(),
                         CorreoElectronico = c.String(),
-                        TelefonoFijo = c.Int(),
-                        Celular = c.Int(nullable: false),
+                        TelefonoFijo = c.String(),
+                        Celular = c.String(nullable: false),
                         Estado = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.EmpleadoId);
@@ -170,8 +170,8 @@ namespace ICEBERG.Datos.Migrations
                         Apellido = c.String(),
                         Domicilio = c.String(nullable: false),
                         CorreoElectronico = c.String(),
-                        TelefonoFijo = c.Int(),
-                        Celular = c.Int(nullable: false),
+                        TelefonoFijo = c.String(),
+                        Celular = c.String(nullable: false),
                         Estado = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.ProveedorId);
@@ -186,8 +186,11 @@ namespace ICEBERG.Datos.Migrations
                         ImportePedidosAcumulados = c.Single(nullable: false),
                         ImporteCostosPedidosAcumulados = c.Single(nullable: false),
                         Estado = c.Boolean(nullable: false),
+                        Pedido_PedidoId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.LineaPedidoId);
+                .PrimaryKey(t => t.LineaPedidoId)
+                .ForeignKey("dbo.Pedidoes", t => t.Pedido_PedidoId, cascadeDelete: true)
+                .Index(t => t.Pedido_PedidoId);
             
             CreateTable(
                 "dbo.Novedads",
@@ -218,6 +221,7 @@ namespace ICEBERG.Datos.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.Novedads", "Usuario_UsuarioId", "dbo.Usuarios");
+            DropForeignKey("dbo.LineaPedidoes", "Pedido_PedidoId", "dbo.Pedidoes");
             DropForeignKey("dbo.ArticuloProveedors", "Proveedor_ProveedorId", "dbo.Proveedors");
             DropForeignKey("dbo.ArticuloProveedors", "Articulo_ArticuloId", "dbo.Articuloes");
             DropForeignKey("dbo.ArticuloPedidoes", "Pedido_PedidoId", "dbo.Pedidoes");
@@ -229,6 +233,7 @@ namespace ICEBERG.Datos.Migrations
             DropForeignKey("dbo.Articuloes", "Categoría_CategoríaId", "dbo.Categoría");
             DropForeignKey("dbo.Categoría", "Rubro_RubroId", "dbo.Rubroes");
             DropIndex("dbo.Novedads", new[] { "Usuario_UsuarioId" });
+            DropIndex("dbo.LineaPedidoes", new[] { "Pedido_PedidoId" });
             DropIndex("dbo.ArticuloProveedors", new[] { "Proveedor_ProveedorId" });
             DropIndex("dbo.ArticuloProveedors", new[] { "Articulo_ArticuloId" });
             DropIndex("dbo.Usuarios", new[] { "Perfil_PerfilId" });

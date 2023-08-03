@@ -42,6 +42,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.preciopedidopormenor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preciopedidopormayor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rubro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -49,7 +50,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(757, 99);
+            this.btnEliminar.Location = new System.Drawing.Point(823, 99);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 12;
@@ -59,7 +60,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(757, 70);
+            this.btnEditar.Location = new System.Drawing.Point(823, 70);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 11;
@@ -69,7 +70,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(757, 41);
+            this.btnNuevo.Location = new System.Drawing.Point(823, 41);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 10;
@@ -99,12 +100,13 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.preciocosto,
             this.preciopedidopormenor,
             this.preciopedidopormayor,
-            this.categoria});
+            this.categoria,
+            this.Rubro});
             this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(15, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(726, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(792, 150);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -126,44 +128,51 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // descripción
             // 
             this.descripción.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.descripción.DataPropertyName = "descripción";
+            this.descripción.DataPropertyName = "Descripción";
             this.descripción.HeaderText = "Descripción";
             this.descripción.Name = "descripción";
             this.descripción.ReadOnly = true;
             // 
             // preciocosto
             // 
-            this.preciocosto.DataPropertyName = "preciocosto";
+            this.preciocosto.DataPropertyName = "PrecioCosto";
             this.preciocosto.HeaderText = "Precio Costo";
             this.preciocosto.Name = "preciocosto";
             this.preciocosto.ReadOnly = true;
             // 
             // preciopedidopormenor
             // 
-            this.preciopedidopormenor.DataPropertyName = "preciopedidopormenor";
+            this.preciopedidopormenor.DataPropertyName = "PrecioPedidoPorMenor";
             this.preciopedidopormenor.HeaderText = "Precio Pedido Por Menor";
             this.preciopedidopormenor.Name = "preciopedidopormenor";
             this.preciopedidopormenor.ReadOnly = true;
             // 
             // preciopedidopormayor
             // 
-            this.preciopedidopormayor.DataPropertyName = "preciopedidopormayor";
+            this.preciopedidopormayor.DataPropertyName = "PrecioPedidoPorMayor";
             this.preciopedidopormayor.HeaderText = "Precio Pedido Por Mayor";
             this.preciopedidopormayor.Name = "preciopedidopormayor";
             this.preciopedidopormayor.ReadOnly = true;
             // 
             // categoria
             // 
-            this.categoria.DataPropertyName = "categoria";
+            this.categoria.DataPropertyName = "Categoria";
             this.categoria.HeaderText = "Categoría";
             this.categoria.Name = "categoria";
             this.categoria.ReadOnly = true;
+            // 
+            // Rubro
+            // 
+            this.Rubro.DataPropertyName = "Rubro";
+            this.Rubro.HeaderText = "Rubro";
+            this.Rubro.Name = "Rubro";
+            this.Rubro.ReadOnly = true;
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 209);
+            this.ClientSize = new System.Drawing.Size(910, 209);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnNuevo);
@@ -186,6 +195,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ArticuloId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripción;
@@ -193,6 +203,6 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
         private System.Windows.Forms.DataGridViewTextBoxColumn preciopedidopormenor;
         private System.Windows.Forms.DataGridViewTextBoxColumn preciopedidopormayor;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rubro;
     }
 }

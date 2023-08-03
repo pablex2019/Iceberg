@@ -40,8 +40,8 @@ namespace ICEBERG.Presentacion.Presentadores
                 Apellido = editar.txtApellido.Text,
                 Domicilio = editar.txtDomicilio.Text,
                 CorreoElectronico = editar.txtCorreoElectronico.Text,
-                TelefonoFijo = Convert.ToInt32(editar.txtTelefonoFijo.Text),
-                Celular = Convert.ToInt32(editar.txtCelular.Text),
+                TelefonoFijo = editar.txtTelefonoFijo.Text,
+                Celular = editar.txtCelular.Text,
                 Estado = false
             };
             empleadoServicios.ABMEmpleado(empleado, 2, id);
@@ -72,8 +72,8 @@ namespace ICEBERG.Presentacion.Presentadores
                 Apellido = nuevo.txtApellido.Text,
                 Domicilio = nuevo.txtDomicilio.Text,
                 CorreoElectronico = nuevo.txtCorreoElectronico.Text,
-                TelefonoFijo = Convert.ToInt32(nuevo.txtTelefonoFijo.Text),
-                Celular = Convert.ToInt32(nuevo.txtCelular.Text),
+                TelefonoFijo = nuevo.txtTelefonoFijo.Text,
+                Celular = nuevo.txtCelular.Text,
                 Estado = false
             };
             empleadoServicios.ABMEmpleado(empleado, 1, 0);

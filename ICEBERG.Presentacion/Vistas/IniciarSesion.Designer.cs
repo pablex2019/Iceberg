@@ -65,6 +65,7 @@ namespace ICEBERG.Presentacion.Vistas
             // 
             this.txtClave.Location = new System.Drawing.Point(16, 74);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(100, 20);
             this.txtClave.TabIndex = 3;
             // 

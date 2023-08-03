@@ -69,6 +69,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.btnCancelar.TabIndex = 33;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label4
             // 
@@ -135,6 +136,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.btnGuardar.TabIndex = 19;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtDescripción
             // 
@@ -164,7 +166,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 290);
+            this.ClientSize = new System.Drawing.Size(370, 284);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cboCategorías);
             this.Controls.Add(this.label8);
@@ -181,6 +183,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.Controls.Add(this.txtDescripción);
             this.Name = "Nuevo";
             this.Text = "Articulo - Nuevo";
+            this.Load += new System.EventHandler(this.Nuevo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

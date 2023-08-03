@@ -90,7 +90,7 @@ namespace ICEBERG.Presentacion.Presentadores
         public void VerificarExistenciaUsuario(Vistas.IniciarSesion iniciarSesion)
         {
             if (!string.IsNullOrEmpty(iniciarSesion.txtUsuario.Text) && !string.IsNullOrEmpty(iniciarSesion.txtClave.Text)){
-                if (usuariosServicios.VerificarExitencia(iniciarSesion.txtUsuario.Text,iniciarSesion.txtClave.Text) == true)
+              if (usuariosServicios.VerificarExitencia(iniciarSesion.txtUsuario.Text,iniciarSesion.txtClave.Text) == true)
                 {
                     PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
                     pantallaPrincipal.usuario = iniciarSesion.txtUsuario.Text;
@@ -99,7 +99,7 @@ namespace ICEBERG.Presentacion.Presentadores
                 }
                 else
                 {
-                    usuarioVista.MostrarMensaje("El usuario y/o contraseña incorrectos");
+                   usuarioVista.MostrarMensaje("El usuario y/o contraseña incorrectos");
                 }
             }
             else

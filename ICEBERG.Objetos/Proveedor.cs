@@ -21,9 +21,9 @@ namespace ICEBERG.Objetos
         [Required]
         public string Domicilio { get; set; }
         public string CorreoElectronico { get; set; }
-        public int? TelefonoFijo { get; set; }
+        public string TelefonoFijo { get; set; }
         [Required]
-        public int Celular { get; set; }
+        public string Celular { get; set; }
         public bool Estado { get; set; }
     }
 }

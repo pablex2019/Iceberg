@@ -35,9 +35,9 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             if (id != 0)
             {
                 Vistas.Articulo.Editar Editar = new Vistas.Articulo.Editar();
-                //Editar.id = id;
-                //Editar._categorias = articuloPresentador.ObtenerCategorias();
-                //Editar.BindingSource = bindingSource1;
+                Editar.id = id;
+                Editar._categorias = articuloPresentador.ObtenerCategorias();
+                Editar.BindingSource = bindingSource1;
                 Editar.ShowDialog();
             }
             else
@@ -48,13 +48,13 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //articuloPresentador.EliminarArticulo(id);
+            articuloPresentador.EliminarArticulo(id);
             bindingSource1.DataSource = articuloPresentador.Listado();
         }
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            //bindingSource1.DataSource = articuloPresentador.Listado();
+            bindingSource1.DataSource = articuloPresentador.Listado();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
