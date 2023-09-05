@@ -68,9 +68,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ICEBERG.Objetos\ICEBERG.Objetos.csproj">
+    <ProjectReference Include="..\ICEBERG.Objetos\ICEBERG.Dominio.csproj">
       <Project>{7ce384bc-41e3-4dd1-8d2b-7e5e5b5fe88e}</Project>
-      <Name>ICEBERG.Objetos</Name>
+      <Name>ICEBERG.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ICEBERG.Objetos;
+using ICEBERG.Dominio;
 using ICEBERG.Datos;
 
-namespace ICEBERG.Dominio
+namespace ICEBERG.Aplicación
 {
     public class ArticuloServicios
     {

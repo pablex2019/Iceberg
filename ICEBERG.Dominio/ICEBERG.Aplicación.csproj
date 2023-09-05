@@ -51,7 +51,6 @@
     <Compile Include="ArticuloServicios.cs" />
     <Compile Include="CategoríaServicios.cs" />
     <Compile Include="EmpleadoServicios.cs" />
-    <Compile Include="LineaDePedidosServicios.cs" />
     <Compile Include="NovedadServicios.cs" />
     <Compile Include="PedidoServicios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,9 +68,9 @@
       <Project>{427e8689-60cb-4fa8-bff9-df124ada9e02}</Project>
       <Name>ICEBERG.Datos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ICEBERG.Objetos\ICEBERG.Objetos.csproj">
+    <ProjectReference Include="..\ICEBERG.Objetos\ICEBERG.Dominio.csproj">
       <Project>{7ce384bc-41e3-4dd1-8d2b-7e5e5b5fe88e}</Project>
-      <Name>ICEBERG.Objetos</Name>
+      <Name>ICEBERG.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

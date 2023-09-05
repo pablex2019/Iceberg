@@ -1,0 +1,5 @@
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Objetos\bin\Debug\ICEBERG.Objetos.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Objetos\bin\Debug\ICEBERG.Objetos.pdb
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Objetos\obj\Debug\ICEBERG.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Objetos\obj\Debug\ICEBERG.Objetos.dll
+C:\Users\Usuario\Documents\Facultad\ProgramacionDeAplicacionesVisuales\Iceberg\Iceberg\ICEBERG.Objetos\obj\Debug\ICEBERG.Objetos.pdb

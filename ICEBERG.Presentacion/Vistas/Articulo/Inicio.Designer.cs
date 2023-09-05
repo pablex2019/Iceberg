@@ -50,7 +50,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(823, 99);
+            this.btnEliminar.Location = new System.Drawing.Point(837, 99);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 12;
@@ -60,7 +60,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(823, 70);
+            this.btnEditar.Location = new System.Drawing.Point(837, 70);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 11;
@@ -70,7 +70,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(823, 41);
+            this.btnNuevo.Location = new System.Drawing.Point(837, 41);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 10;
@@ -106,7 +106,7 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             this.dataGridView1.Location = new System.Drawing.Point(15, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(792, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(807, 399);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -172,13 +172,14 @@ namespace ICEBERG.Presentacion.Vistas.Articulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 209);
+            this.ClientSize = new System.Drawing.Size(921, 461);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos - Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

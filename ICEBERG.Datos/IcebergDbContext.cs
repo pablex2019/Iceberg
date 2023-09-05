@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Configuration;
-using ICEBERG.Objetos;
+using ICEBERG.Dominio;
 
 namespace ICEBERG.Datos
 {
@@ -28,7 +28,6 @@ namespace ICEBERG.Datos
 
 
         public IcebergDbContext() : base("name=IcebergDeveloper") { }
-
 
     }
 }

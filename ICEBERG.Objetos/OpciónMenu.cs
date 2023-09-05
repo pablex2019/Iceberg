@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ICEBERG.Objetos
+namespace ICEBERG.Dominio
 {
     public class OpciónMenu
     {
